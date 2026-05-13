@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 class="title">Hello World!</h1>
+      <p id="currentTime"></p>
+      <script src="script.js"></script>
+  </body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Wears - Premium Clothing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; }
+    .hero { background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://source.unsplash.com/random/1600x900/?fashion,model') center/cover no-repeat; }
+    .floating-whatsapp { position: fixed; bottom: 20px; right: 20px; z-index: 50; }
+  </style>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Navigation -->
+  <nav class="bg-black text-white py-4 sticky top-0 z-50 shadow-md">
+    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-purple-400">Royal Wears 👑</h1>
+      <div class="space-x-8 text-sm md:text-base">
+        <a href="#shop" class="hover:text-purple-400">Shop</a>
+        <a href="#sell" class="hover:text-purple-400">Sell</a>
+        <a href="#about" class="hover:text-purple-400">About</a>
+        <a href="#contact" class="hover:text-purple-400">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero h-screen flex items-center text-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-5xl md:text-6xl font-bold mb-4">Dress Like Royalty</h2>
+      <p class="text-2xl mb-8">Buy Premium Clothes • Sell Your Quality Used Clothes</p>
+      <div class="space-x-4">
+        <a href="#shop" class="bg-purple-600 hover:bg-purple-700 px-10 py-4 rounded-full text-lg font-semibold">Shop Now</a>
+        <a href="#sell" class="bg-white text-black hover:bg-gray-100 px-10 py-4 rounded-full text-lg font-semibold">Sell Your Clothes</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-8">About Royal Wears</h2>
+      <p class="text-lg max-w-3xl mx-auto">
+        We sell high-quality new clothes for men, women, and children. We also buy clean and quality used clothes. 
+        Look good, feel confident with Royal Wears.
+      </p>
+    </div>
+  </section>
+
+  <!-- Shop / Products -->
+  <section id="shop" class="py-20 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">Our Collections</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white rounded-2xl overflow-hidden shadow hover:shadow-xl transition">
+          <div class="h-64 bg-gray-200 flex items-center justify-center text-7xl">👕</div>
+          <div class="p-6"><h3 class="font-bold text-xl text-center">Men's Wear</h3><p class="text-purple-600 text-center">From ₦8,000</p></div>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden shadow hover:shadow-xl transition">
+          <div class="h-64 bg-gray-200 flex items-center justify-center text-7xl">👗</div>
+          <div class="p-6"><h3 class="font-bold text-xl text-center">Women's Wear</h3><p class="text-purple-600 text-center">From ₦10,000</p></div>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden shadow hover:shadow-xl transition">
+          <div class="h-64 bg-gray-200 flex items-center justify-center text-7xl">👟</div>
+          <div class="p-6"><h3 class="font-bold text-xl text-center">Shoes</h3><p class="text-purple-600 text-center">From ₦12,000</p></div>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden shadow hover:shadow-xl transition">
+          <div class="h-64 bg-gray-200 flex items-center justify-center text-7xl">🧥</div>
+          <div class="p-6"><h3 class="font-bold text-xl text-center">Kids Wear</h3><p class="text-purple-600 text-center">From ₦5,000</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sell Section -->
+  <section id="sell" class="py-20 bg-black text-white text-center">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-6">Sell Your Clothes To Us</h2>
+      <p class="text-xl mb-10">We buy clean and quality used clothes at good prices.<br>Turn your old clothes into cash today!</p>
+      <a href="#contact" class="bg-purple-600 hover:bg-purple-700 px-12 py-5 rounded-full text-xl inline-block">Contact Us Now</a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">Happy Customers</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 p-8 rounded-2xl">“Best place to buy and sell clothes. Very fair prices!”<br><span class="font-semibold mt-4 block">- Chioma</span></div>
+        <div class="bg-gray-50 p-8 rounded-2xl">“Quality clothes and they bought my clothes instantly.”<br><span class="font-semibold mt-4 block">- David</span></div>
+        <div class="bg-gray-50 p-8 rounded-2xl">“I love shopping here. Always fresh stock!”<br><span class="font-semibold mt-4 block">- Aisha</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-gray-900 text-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-8">Contact Royal Wears</h2>
+      <p class="text-2xl mb-6">📞 <strong>0906998119</strong></p>
+      <p class="mb-10">Call or WhatsApp us anytime</p>
+      
+      <div class="flex flex-col md:flex-row gap-6 justify-center">
+        <a href="https://wa.me/234906998119" target="_blank" class="flex items-center gap-3 bg-green-600 hover:bg-green-700 px-10 py-5 rounded-2xl text-lg">
+          <i class="fab fa-whatsapp text-3xl"></i> Chat on WhatsApp
+        </a>
+        <a href="https://facebook.com" target="_blank" class="flex items-center gap-3 bg-blue-600 hover:bg-blue-700 px-10 py-5 rounded-2xl text-lg">
+          <i class="fab fa-facebook text-3xl"></i> Facebook Page
+        </a>
+      </div>
+
+      <p class="mt-12 text-gray-400">
+        📍 Your Shop Address Here, City, State, Nigeria
+      </p>
+    </div>
+  </section>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/234906998119" target="_blank" class="floating-whatsapp bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl text-4xl">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <footer class="bg-black text-white py-10 text-center">
+    <p class="text-lg">© 2026 Royal Wears 👑 • All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
